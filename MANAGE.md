@@ -46,3 +46,9 @@ That is it. The site rebuilds itself.
   are different files.
 - If the site ever looks broken after an edit, tell Phoenix what you
   changed and it can be undone in seconds.
+
+## Quote form
+The "Get a quote" form sends requests straight to Nepostandpolish@gmail.com (free, via FormSubmit &mdash; no account needed).
+- The FIRST time someone submits, FormSubmit emails you an activation link. Click it once and quotes flow in after that.
+- To send quotes somewhere else, edit the form's `action=` address in index.html (search for `formsubmit.co/`).
+- After submitting, visitors land on thanks.html ("Request received").
