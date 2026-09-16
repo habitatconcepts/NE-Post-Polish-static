@@ -1,0 +1,210 @@
+/* ============================================================
+   NE POST & POLISH — theme
+   Cream + deep navy + antique gold. Same look as the old site,
+   rebuilt lean. To change a color, edit the lines below once and
+   the whole site updates.
+   ============================================================ */
+:root {
+  --cream: #f7f4ec;        /* page background            */
+  --cream-deep: #efe9da;   /* cards on cream             */
+  --navy: #141c2c;         /* dark sections, header text */
+  --navy-soft: #1c2740;    /* dark cards                 */
+  --gold: #c2a15f;         /* accents, kickers, buttons  */
+  --gold-deep: #a8853f;    /* button hover               */
+  --ink: #232b3d;          /* body text on cream         */
+  --muted: #6b7280;        /* secondary text             */
+  --line: #e2dccb;         /* borders on cream           */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--navy);
+}
+h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 2rem; }
+h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+.section { padding: 4.5rem 0; }
+.section-dark { background: var(--navy); }
+.section-dark h1, .section-dark h2, .section-dark h3 { color: #fff; }
+.section-dark .lede { color: #c9cfdd; }
+
+.kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-top: 2px solid var(--gold);
+  display: inline-block;
+  padding-top: 0.5rem;
+}
+
+.lede { font-size: 1.15rem; color: var(--muted); margin: 1.25rem 0 2rem; max-width: 34rem; }
+.fineprint { color: var(--muted); font-size: 0.95rem; margin-top: 2rem; }
+.section-dark .fineprint { color: #9aa3b8; }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { background: var(--gold-deep); }
+.btn-ghost { border: 2px solid var(--gold); color: var(--gold); }
+.btn-ghost:hover { background: var(--gold); color: var(--navy); }
+.section:not(.section-dark) .btn-ghost { color: var(--gold-deep); border-color: var(--gold-deep); }
+.btn-small { padding: 0.6rem 1.1rem; background: var(--navy); color: #fff; }
+.btn-small:hover { background: var(--navy-soft); }
+
+/* ---------- header ---------- */
+.site-header {
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.brand img { height: 52px; width: auto; display: block; }
+.main-nav { display: flex; gap: 1.5rem; }
+.main-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.main-nav a:hover { color: var(--gold-deep); }
+
+/* ---------- hero ---------- */
+.hero { background: var(--navy); color: #fff; padding: 4.5rem 0; }
+.hero h1 { color: #fff; }
+.hero-grid { display: grid; gap: 3rem; align-items: center; }
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.hero-checks { list-style: none; }
+.hero-checks li {
+  padding-left: 1.8rem;
+  position: relative;
+  margin-bottom: 0.7rem;
+  color: #c9cfdd;
+}
+.hero-checks li::before {
+  content: "✓";
+  color: var(--gold);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(194, 161, 95, 0.5);
+}
+
+/* ---------- strip ---------- */
+.strip { background: var(--cream-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.strip .wrap { padding-top: 1.6rem; padding-bottom: 1.6rem; }
+.strip p { font-size: 1.15rem; color: var(--ink); max-width: 60rem; }
+.strip strong { color: var(--navy); }
+
+/* ---------- cards ---------- */
+.cards { display: grid; gap: 1.5rem; }
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 2rem;
+}
+.card h3 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+.card p, .card li { color: var(--muted); }
+.card ul { list-style: none; margin-top: 1rem; }
+.card ul li { padding-left: 1.6rem; position: relative; margin-bottom: 0.5rem; }
+.card ul li::before { content: "✓"; color: var(--gold-deep); font-weight: 700; position: absolute; left: 0; }
+.card-dark { background: var(--navy-soft); border-color: #2a3654; }
+.card-dark h3 { color: #fff; }
+.card-dark p, .card-dark li { color: #c9cfdd; }
+.card-featured { border-top-width: 5px; }
+.price { font-family: "Playfair Display", Georgia, serif; font-size: 2.6rem; color: var(--gold); font-weight: 700; }
+
+/* ---------- gallery ---------- */
+.gallery { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+.gallery figure {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.gallery img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.gallery figcaption { padding: 0.8rem 1rem; font-size: 0.9rem; color: var(--muted); font-style: italic; }
+
+/* ---------- contact ---------- */
+.contact-grid { display: grid; gap: 3rem; }
+.contact-card {
+  background: var(--navy-soft);
+  border: 1px solid #2a3654;
+  border-radius: 4px;
+  padding: 2rem;
+}
+.contact-card h3 { color: #fff; margin-bottom: 1rem; }
+.contact-card ol { margin-left: 1.25rem; color: #c9cfdd; }
+.contact-card li { margin-bottom: 0.6rem; }
+
+/* ---------- footer ---------- */
+.site-footer { background: var(--navy); color: #9aa3b8; padding: 3rem 0 1.5rem; }
+.footer-grid { display: grid; gap: 2rem; margin-bottom: 2rem; }
+.footer-logo { height: 64px; width: auto; margin-bottom: 1rem; }
+.tagline { font-size: 1.1rem; color: #c9cfdd; max-width: 26rem; }
+.footer-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; align-content: start; }
+.footer-nav a {
+  color: #9aa3b8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer-nav a:hover { color: var(--gold); }
+.footer-bottom { border-top: 1px solid #2a3654; padding-top: 1.25rem; font-size: 0.9rem; }
+
+/* ---------- wider screens ---------- */
+@media (min-width: 760px) {
+  .hero-grid { grid-template-columns: 1.05fr 0.95fr; }
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .section-dark .cards { grid-template-columns: repeat(2, 1fr); }
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+  .contact-grid { grid-template-columns: 1.1fr 0.9fr; align-items: start; }
+  .footer-grid { grid-template-columns: 1fr auto; }
+}
+@media (max-width: 759px) {
+  .main-nav { display: none; }
+}
