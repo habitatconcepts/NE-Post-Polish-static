@@ -24,6 +24,7 @@
       <a href="#pricing">Pricing</a>
       <a href="#work">Work</a>
       <a href="#faq">FAQ</a>
+      <a href="#quote">Quote</a>
       <a href="#contact">Book</a>
     </nav>
     <!-- EDIT: phone number — change in both the link and the text -->
@@ -216,6 +217,76 @@
         <p>Northern Rhode Island, nearby Massachusetts, and northeastern Connecticut. Full town list in the footer.</p>
       </article>
     </div>
+  </div>
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+<section class="section" id="quote">
+  <div class="wrap quote-grid">
+    <div>
+      <p class="kicker">Get a quote</p>
+      <!-- EDIT: quote headline -->
+      <h2>A firm price, <em>before we visit.</em></h2>
+      <!-- EDIT: quote intro -->
+      <p class="lede">Tell us what you need and attach a photo. We&rsquo;ll reply with an all-inclusive price &mdash; no estimator visit, no pressure.</p>
+      <ol class="quote-steps">
+        <li><strong>1.</strong> You send the details and a photo.</li>
+        <li><strong>2.</strong> We reply with a firm, all-inclusive price.</li>
+        <li><strong>3.</strong> Pick a day &mdash; done in one visit.</li>
+      </ol>
+    </div>
+    <form class="quote-form" action="https://formsubmit.co/Nepostandpolish@gmail.com" method="POST" enctype="multipart/form-data">
+      <!-- EDIT: quote form — requests go to Nepostandpolish@gmail.com. Change the email in the action= address above to reroute. -->
+      <input type="hidden" name="_subject" value="New quote request &mdash; NE Post &amp; Polish">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://postandpolish.org/thanks.html">
+      <div class="field-row">
+        <div class="field">
+          <label for="q-name">Name *</label>
+          <input id="q-name" type="text" name="Name" required>
+        </div>
+        <div class="field">
+          <label for="q-phone">Phone *</label>
+          <input id="q-phone" type="tel" name="Phone" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="q-town">Town *</label>
+        <input id="q-town" type="text" name="Town" placeholder="e.g. Burrillville" required>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="q-service">What do you need?</label>
+          <select id="q-service" name="Service">
+            <option>Full replacement</option>
+            <option>Refresh the look</option>
+            <option>Storm or plow damage</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="q-package">Package</label>
+          <select id="q-package" name="Package">
+            <option>Not sure yet</option>
+            <option>Standard &mdash; $349</option>
+            <option>Premium &mdash; $699</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="q-photo">Photo of your current mailbox</label>
+        <input id="q-photo" type="file" name="Photo" accept="image/*">
+      </div>
+      <div class="field">
+        <label for="q-notes">Anything we should know?</label>
+        <textarea id="q-notes" name="Details" placeholder="Leaning, rotted, HOA rules, gate code&hellip;"></textarea>
+      </div>
+      <button class="btn btn-gold" type="submit">Request my quote</button>
+      <p class="fineprint">We reply fast &mdash; usually same day.</p>
+    </form>
   </div>
 </section>
 
