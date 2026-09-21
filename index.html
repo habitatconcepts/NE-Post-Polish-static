@@ -19,6 +19,8 @@
     <a class="brand" href="#top" aria-label="NE Post and Polish home">
       <img src="images/logo.png" alt="NE Post &amp; Polish logo">
     </a>
+    <!-- EDIT: mobile menu button — no need to touch this -->
+    <button class="nav-burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="main-nav">
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
@@ -387,6 +389,25 @@
   <a class="call" href="tel:+14016966857">Call now</a>
   <a class="quote-link" href="#quote">Get a quote</a>
 </div>
+
+<!-- EDIT: mobile menu behavior — no need to touch this -->
+<script>
+(function () {
+  var burger = document.querySelector('.nav-burger');
+  var nav = document.querySelector('.main-nav');
+  if (!burger || !nav) return;
+  burger.addEventListener('click', function () {
+    var open = nav.classList.toggle('nav-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      nav.classList.remove('nav-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
