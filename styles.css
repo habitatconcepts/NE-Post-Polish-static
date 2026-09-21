@@ -337,3 +337,45 @@ h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
   .gallery-strip figure { flex: none; }
   .sticky-cta { display: none; }
 }
+
+/* ---------- mobile menu ---------- */
+.nav-burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 0.4rem;
+}
+.nav-burger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--navy);
+  border-radius: 2px;
+  margin: 5px 0;
+}
+@media (max-width: 759px) {
+  .brand { order: 0; }
+  .header-inner .btn-small { order: 1; margin-left: auto; }
+  .nav-burger { display: block; order: 2; }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 14px 28px rgba(20,28,44,.14);
+    flex-direction: column;
+    gap: 0;
+    padding: 0.4rem 1.25rem 0.9rem;
+  }
+  .main-nav.nav-open { display: flex; }
+  .main-nav a {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .main-nav a:first-child { border-top: none; }
+}
