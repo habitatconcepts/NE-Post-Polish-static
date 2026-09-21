@@ -60,97 +60,75 @@
 <main id="top">
 
   <!-- EDIT: Hero section -->
-  <section class="hero">
+  <section class="hero hero-condensed">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <!-- EDIT: Hero kicker — small line above the headline -->
         <p class="kicker kicker-deep hero-anim" style="--d:0ms">Mailbox Post Specialists · Burrillville, RI</p>
-        <!-- EDIT: Hero headline -->
+        <!-- EDIT: Hero headline — kept from v2; tested alternatives ("Your mailbox, handled.", "Done. Done right. Guaranteed.") and all were weaker -->
         <h1 class="hero-anim" style="--d:80ms">Reclaim your <em>Saturday.</em></h1>
-        <!-- EDIT: Hero sub -->
-        <p class="lede hero-anim" style="--d:160ms">Two minutes to book. One visit to fix. Zero weekends lost to a mailbox project.</p>
-        <!-- EDIT: Hero checklist under the sub -->
-        <ul class="hero-check hero-anim" style="--d:240ms">
+        <!-- EDIT: Hero sub / lede -->
+        <p class="lede hero-anim" style="--d:160ms">Two minutes to book. One visit to fix. Zero weekends lost to a mailbox.</p>
+        <!-- EDIT: Hero checklist — folded positioning included as final line -->
+        <ul class="hero-check hero-check--cols hero-anim" style="--d:240ms">
           <li>USPS-compliant install</li>
           <li>Old unit hauled away</li>
           <li>Fixed prices — no quotes that change on you</li>
-          <li>24/7 — call whenever</li>
-          <!-- EDIT: Turnaround promise — change the number to match real capacity -->
           <li>Installed within 3 days of booking</li>
+          <li>We do mailboxes. That&rsquo;s why yours gets done right.</li>
         </ul>
         <!-- EDIT: Hero primary + secondary CTAs -->
         <div class="hero-ctas hero-anim" style="--d:320ms">
           <a class="btn btn-gold btn-lg" href="#quote">Get a Quote</a>
           <a class="btn btn-outline btn-lg" href="#work">See Our Work</a>
         </div>
-        <!-- EDIT: Hero proof line (kept in first viewport) -->
+        <!-- EDIT: Hero proof line — kept in first viewport -->
         <p class="hero-proof hero-anim" style="--d:400ms"><span class="stars" aria-hidden="true">★★★★★</span> <strong>5.0 on Google</strong> · 40+ jobs since 2023</p>
       </div>
       <!-- EDIT: Hero photo — three finished builds -->
-      <figure class="hero-media hero-anim" style="--d:200ms">
+      <figure class="hero-media hero-visual hero-anim" style="--d:200ms">
         <img src="images/rowThreePosts.webp" alt="Three finished mailbox post builds by NE Post &amp; Polish" width="1500" height="2000" fetchpriority="high" decoding="async">
         <figcaption>Three finished builds — Standard, Premium, custom.</figcaption>
-        <img class="sticker-badge" src="images/standard-sticker.webp" alt="Standard package mailbox post cutout" width="732" height="1230" decoding="async">
+        <img class="sticker-badge" src="images/standard-sticker.webp" alt="Standard package mailbox post — actual build" width="732" height="1230" decoding="async">
       </figure>
     </div>
   </section>
 
-  <!-- EDIT: One-line positioning strip directly under the hero -->
-  <div class="positioning" role="note" aria-label="What we do">
-    <p class="positioning-inner">We don&rsquo;t do gutters, fences, or odd jobs. We do mailboxes — which is exactly why yours will be done right.</p>
-  </div>
-
-  <!-- EDIT: Services section -->
-  <section class="section" id="services">
-    <div class="wrap">
-      <!-- EDIT: Services section headline -->
-      <p class="kicker kicker-deep reveal">What we fix</p>
-      <span class="rule reveal" aria-hidden="true"></span>
-      <h2 class="reveal">Pick your fix.</h2>
-      <div class="snap-row reveal-group">
-        <article class="service-card reveal">
-          <p class="card-num">01</p>
-          <!-- EDIT: Replace service — headline + lines -->
-          <h3>Replace</h3>
-          <p class="service-title">Full replacement.</p>
-          <p>Rotted post, leaning box, the whole thing&rsquo;s seen better days. We tear it out and build you a new one. Old unit hauled away.</p>
-          <a class="text-link" href="#pricing">See pricing ↓</a>
-        </article>
-        <article class="service-card reveal">
-          <p class="card-num">02</p>
-          <!-- EDIT: Refresh service — headline + lines -->
-          <h3>Refresh</h3>
-          <p class="service-title">Refresh the look.</p>
-          <p>Post still solid but looking tired? Premium paint or stain, new numbers and hardware — your mailbox, looking brand new. Paint and stain are Premium-only.</p>
-          <a class="text-link" href="#pricing">See pricing ↓</a>
-        </article>
-        <article class="service-card reveal">
-          <p class="card-num">03</p>
-          <!-- EDIT: Recover service — headline + lines -->
-          <h3>Recover</h3>
-          <p class="service-title">Storm or plow damage.</p>
-          <p>Snow plow took it out again? We&rsquo;ve got a snow-plow-proof layout for that. One visit and you&rsquo;re back in business.</p>
-          <a class="text-link" href="#pricing">See pricing ↓</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- EDIT: Pricing section -->
-  <section class="section section-tight" id="pricing">
+  <section class="section section-compact" id="pricing">
     <div class="wrap">
       <!-- EDIT: Pricing section headline -->
       <p class="kicker kicker-deep reveal">Packages</p>
       <span class="rule reveal" aria-hidden="true"></span>
       <h2 class="reveal">Two packages. Fixed prices. Done.</h2>
       <div class="pricing-grid">
+        <article class="price-card premium reveal">
+          <span class="badge" aria-hidden="true">Most popular</span>
+          <p class="kicker kicker-pale">Premium</p>
+          <p class="price">$699</p>
+          <p class="price-note">one fixed price</p>
+          <!-- EDIT: Premium package sticker photo (white-border cutout) -->
+          <img class="sticker sticker-premium sticker--blend" src="images/premium-sticker.webp" alt="Premium package mailbox post — actual build" width="800" height="1060" loading="lazy" decoding="async">
+          <!-- EDIT: Premium package features — the three items tagged (Premium only) never appear on Standard -->
+          <ul class="features">
+            <li>Custom paint/stain — your colors <span class="tag">Premium only</span></li>
+            <li>Mailbox style &amp; color of choice</li>
+            <li>Premium numbers &amp; hardware <span class="tag">Premium only</span></li>
+            <li>Premium 4–6&Prime; metal base</li>
+            <li>Hanger &amp; solar light fixtures <span class="tag">Premium only</span></li>
+            <li>Full install</li>
+            <li>Old unit hauled away</li>
+          </ul>
+          <a class="btn btn-gold btn-block" href="tel:+14016966857">Choose Premium</a>
+          <p class="card-micro">Free quote from a photo — text us a picture.</p>
+        </article>
         <article class="price-card standard reveal">
           <p class="kicker kicker-deep">Standard</p>
           <p class="price">$349</p>
           <p class="price-note">one fixed price</p>
           <!-- EDIT: Standard package sticker photo (white-border cutout) -->
-          <img class="sticker sticker-standard" src="images/standard-sticker.webp" alt="Standard package mailbox post — actual build" width="732" height="1230" loading="lazy" decoding="async">
-          <!-- EDIT: Standard package features — do not add paint, hanger, or solar; those are Premium-only -->
+          <img class="sticker sticker-standard sticker--blend" src="images/standard-sticker.webp" alt="Standard package mailbox post — actual build" width="732" height="1230" loading="lazy" decoding="async">
+          <!-- EDIT: Standard package features — do NOT add paint, hanger, or solar; those are Premium-only -->
           <ul class="features">
             <li>Quality mailbox, assembled in our shop</li>
             <li>House numbers &amp; hardware</li>
@@ -161,100 +139,102 @@
           <a class="btn btn-outline btn-block" href="tel:+14016966857">Choose Standard</a>
           <p class="card-micro">Free quote from a photo — text us a picture.</p>
         </article>
-        <article class="price-card premium reveal">
-          <span class="badge" aria-hidden="true">Most popular</span>
-          <p class="kicker kicker-pale">Premium</p>
-          <p class="price">$699</p>
-          <p class="price-note">one fixed price</p>
-          <!-- EDIT: Premium package sticker photo (white-border cutout) -->
-          <img class="sticker sticker-premium" src="images/premium-sticker.webp" alt="Premium package mailbox post — actual build" width="800" height="1060" loading="lazy" decoding="async">
-          <!-- EDIT: Premium package features -->
-          <ul class="features">
-            <li>Custom paint/stain — your colors <span class="tag">Premium only</span></li>
-            <li>Mailbox style &amp; color of choice</li>
-            <li>Premium numbers &amp; hardware</li>
-            <li>Premium 4–6&Prime; metal base</li>
-            <li>Hanger &amp; solar light fixtures <span class="tag">Premium only</span></li>
-            <li>Full install</li>
-            <li>Old unit hauled away</li>
-          </ul>
-          <a class="btn btn-gold btn-block" href="tel:+14016966857">Choose Premium</a>
-          <p class="card-micro">Free quote from a photo — text us a picture.</p>
-        </article>
       </div>
-      <!-- EDIT: Pricing note under both packages -->
+      <!-- EDIT: Pricing note under both packages — guarantee must survive -->
       <p class="pricing-note reveal"><em>Every install is USPS-compliant. Prices are fixed — no fluctuating quotes. And you don&rsquo;t pay until it&rsquo;s standing straight.</em></p>
     </div>
   </section>
 
   <!-- EDIT: Multi-unit / landlords section -->
-  <section class="section band-dark" id="multi-unit">
+  <section class="section section-compact band-dark" id="multi-unit">
     <div class="wrap">
       <!-- EDIT: Multi-unit section kicker -->
       <p class="kicker kicker-pale reveal">For landlords &amp; property managers</p>
       <span class="rule reveal" aria-hidden="true"></span>
       <!-- EDIT: Multi-unit section headline -->
       <h2 class="reveal">One post. Every box.</h2>
-      <!-- EDIT: Multi-unit intro — audience is landlords & property managers -->
-      <p class="lede lede-light reveal">Built for landlords and property managers. One sturdy post carrying 2, 3, or 4 boxes — built to survive plows and tenants. Code-compliant, fixed price, done in one visit.</p>
-      <!-- EDIT: Multi-unit banner photo -->
-      <figure class="mu-banner reveal">
-        <img src="images/displayMailboxes.webp" alt="A quad install — four mailboxes on one post" width="1170" height="878" loading="lazy" decoding="async">
-        <figcaption>A quad install — four boxes, one post.</figcaption>
-      </figure>
+      <!-- EDIT: Multi-unit intro — one line for landlords -->
+      <p class="lede reveal">One sturdy post carrying 2, 3, or 4 boxes — built to survive plows and tenants, code-compliant, done in one visit.</p>
       <!-- EDIT: Multi-unit tiers — prices locked, do not change -->
-      <div class="snap-row mu-row reveal-group">
-        <article class="mu-card reveal">
-          <p class="kicker kicker-deep">Duplex — 2 units</p>
+      <div class="mu-inline reveal-group">
+        <div class="mu-item reveal">
+          <p class="kicker kicker-pale">Duplex — 2 units</p>
           <p class="mu-price">$549</p>
-          <p>Two boxes, one post, full install.</p>
-          <a class="text-link" href="#quote" data-package="Multi-Unit — Duplex $549">Get a quote →</a>
-        </article>
-        <article class="mu-card reveal">
-          <p class="kicker kicker-deep">Triplex — 3 units</p>
+          <p class="spec">Two boxes, one post, full install.</p>
+        </div>
+        <div class="mu-item reveal">
+          <p class="kicker kicker-pale">Triplex — 3 units</p>
           <p class="mu-price">$749</p>
-          <p>Three boxes, one post, full install.</p>
-          <a class="text-link" href="#quote" data-package="Multi-Unit — Triplex $749">Get a quote →</a>
-        </article>
-        <article class="mu-card reveal">
-          <p class="kicker kicker-deep">Quad — 4 units</p>
+          <p class="spec">Three boxes, one post, full install.</p>
+        </div>
+        <div class="mu-item reveal">
+          <p class="kicker kicker-pale">Quad — 4 units</p>
           <p class="mu-price">$899</p>
-          <p>Four boxes, one post, full install.</p>
-          <a class="text-link" href="#quote" data-package="Multi-Unit — Quad $899">Get a quote →</a>
-        </article>
+          <p class="spec">Four boxes, one post, full install.</p>
+        </div>
       </div>
       <!-- EDIT: Multi-unit CTA -->
       <p class="mu-cta reveal"><a class="btn btn-gold" href="#quote" data-package="Multi-Unit — Duplex $549">Got a building? Get a quote.</a></p>
     </div>
   </section>
 
+  <!-- EDIT: Services section -->
+  <section class="section section-compact" id="services">
+    <div class="wrap">
+      <!-- EDIT: Services strip headline -->
+      <p class="kicker kicker-deep reveal">What we fix</p>
+      <span class="rule reveal" aria-hidden="true"></span>
+      <h2 class="reveal">Pick your fix.</h2>
+      <div class="services-strip reveal-group">
+        <article class="service-row reveal">
+          <!-- EDIT: Replace service — one line, ~14 words max -->
+          <h3><span class="service-num">01</span> — Replace.</h3>
+          <p>Rotted post, leaning box — we tear it out and build you a new one.</p>
+        </article>
+        <article class="service-row reveal">
+          <!-- EDIT: Refresh service — one line, ~14 words max -->
+          <h3><span class="service-num">02</span> — Refresh.</h3>
+          <p>Solid post, tired look — Premium paint or stain, new numbers and hardware.</p>
+        </article>
+        <article class="service-row reveal">
+          <!-- EDIT: Recover service — one line, ~14 words max -->
+          <h3><span class="service-num">03</span> — Recover.</h3>
+          <p>Plow or storm took it out? Our layout stands up to both.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- EDIT: How-it-works section -->
-  <section class="section" id="how">
+  <section class="section section-compact" id="how">
     <div class="wrap">
       <!-- EDIT: How-it-works section headline -->
       <p class="kicker kicker-deep reveal">The process</p>
       <span class="rule reveal" aria-hidden="true"></span>
       <h2 class="reveal">Easy. Actually easy.</h2>
-      <ol class="steps reveal-group">
+      <ol class="steps-compact reveal-group">
         <li class="step reveal">
+          <!-- EDIT: Step 1 — 6-word title, one body line -->
           <span class="step-num" aria-hidden="true">01</span>
           <div>
             <h3>Tell us what&rsquo;s wrong.</h3>
-            <p>Two-minute quote form — snap a photo of the old one if you want.</p>
+            <p>Two-minute form — snap a photo of the old one.</p>
           </div>
         </li>
         <li class="step reveal">
+          <!-- EDIT: Step 2 — 6-word title, one body line -->
           <span class="step-num" aria-hidden="true">02</span>
           <div>
             <h3>Get a firm price.</h3>
-            <p>Fixed number before we visit. No surprises on the day.</p>
+            <p>Fixed number before we visit. No surprises.</p>
           </div>
         </li>
         <li class="step reveal">
+          <!-- EDIT: Step 3 — 6-word title, one body line -->
           <span class="step-num" aria-hidden="true">03</span>
           <div>
             <h3>We show up and build.</h3>
-            <p>One visit. Old unit hauled away. Mailbox done.</p>
+            <p>One visit. Old unit hauled away. Done.</p>
           </div>
         </li>
       </ol>
@@ -264,110 +244,101 @@
   </section>
 
   <!-- EDIT: Work gallery section -->
-  <section class="section" id="work">
+  <section class="section section-compact" id="work">
     <div class="wrap">
       <!-- EDIT: Gallery kicker -->
       <p class="kicker kicker-deep reveal">Built by hand</p>
       <span class="rule reveal" aria-hidden="true"></span>
-      <!-- EDIT: Gallery headline — developer: populate with real job photos as they arrive -->
+      <!-- EDIT: Gallery headline -->
       <h2 class="reveal">Our work.</h2>
-      <!-- EDIT: Gallery photos — every photo is our own work, no stock -->
-      <div class="gallery reveal-group">
-        <figure class="tile tile-feature reveal">
+      <!-- EDIT: Gallery captions — 5 words each, in photo order; every photo is our own work, no stock -->
+      <div class="gallery-strip reveal">
+        <figure class="gtile">
           <img src="images/charredFrame.webp" alt="Custom charred-stain mailbox post with brushed steel plate" width="1500" height="2000" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
-          <figcaption>Charred-stain showpiece build</figcaption>
+          <figcaption>Charred-stain showpiece, done right</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/charredPost.webp" alt="Charred post with steel bracket detail" width="1170" height="1560" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
           <figcaption>Charred post, steel bracket</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/charredDetail.webp" alt="Close-up of hex hardware on a charred post" width="1170" height="1560" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
           <figcaption>Hex hardware, close up</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/carDisplay.webp" alt="Diecast Mustang display case mounted on a mailbox post" width="1170" height="1560" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
           <figcaption>Mustang display case build</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/displayPosts.webp" alt="Matching finished posts ready to install" width="1170" height="1560" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
           <figcaption>Matching posts, ready to install</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/driveway.webp" alt="Fresh mailbox install at the end of a driveway" width="1500" height="2000" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
           <figcaption>Fresh install at the curb</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/stain.webp" alt="Fresh stain finish on a mailbox post" width="1500" height="2000" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
           <figcaption>Fresh stain, Premium finish</figcaption>
         </figure>
-        <figure class="tile reveal">
+        <figure class="gtile">
           <img src="images/tools.webp" alt="Hand tools in the shop where posts are built" width="1500" height="2000" loading="lazy" decoding="async">
-          <!-- EDIT: Gallery caption -->
-          <figcaption>Built by hand, in our shop</figcaption>
+          <figcaption>Built by hand, in-house</figcaption>
         </figure>
       </div>
-      <!-- EDIT: Gallery trust line (shown on mobile instead of hover captions) -->
+      <!-- EDIT: Gallery trust line -->
       <p class="gallery-note">Every photo is our work. No stock.</p>
     </div>
   </section>
 
   <!-- EDIT: Proof strip — owner's content, keep as-is -->
-  <section class="band-dark proof" aria-label="Customer proof">
+  <section class="band-dark proof-slim" aria-label="Customer proof">
     <div class="wrap">
       <p class="stars stars-lg" aria-hidden="true">★★★★★</p>
       <p class="proof-line reveal">40+ jobs since 2023 · 5.0 rating on Google</p>
-      <!-- EDIT: Testimonial placeholder — owner to replace with a real customer quote -->
-      <blockquote class="proof-quote reveal">&ldquo;He showed up, built it, and left the yard cleaner than he found it.&rdquo;</blockquote>
+      <!-- EDIT: real customer quote goes here -->
     </div>
   </section>
 
   <!-- EDIT: FAQ section -->
-  <section class="section" id="faq">
+  <section class="section section-compact" id="faq">
     <div class="wrap wrap-narrow">
       <!-- EDIT: FAQ kicker -->
       <p class="kicker kicker-deep reveal">Questions</p>
       <span class="rule reveal" aria-hidden="true"></span>
       <h2 class="reveal">Quick answers.</h2>
-      <!-- EDIT: FAQ — keep answers to 1-2 short lines each -->
+      <!-- EDIT: FAQ — 6 questions max, 1–2 short sentences each -->
       <div class="faq-list">
         <details class="faq-item reveal" open>
           <summary>Do I need to be home for the install?</summary>
-          <div class="faq-answer"><p>Nope. As long as the post location is clear, we&rsquo;ll handle it and text you photos when we&rsquo;re done.</p></div>
+          <div class="faq-answer"><p>Nope. Keep the spot clear — we&rsquo;ll handle it and text you photos when it&rsquo;s done.</p></div>
         </details>
         <details class="faq-item reveal">
           <summary>Is my mailbox USPS-compliant?</summary>
-          <div class="faq-answer"><p>Yes. Every install is USPS-compliant. That&rsquo;s the whole point of hiring a mailbox specialist.</p></div>
+          <div class="faq-answer"><p>Yes. Every install is USPS-compliant — that&rsquo;s the whole point of a specialist.</p></div>
         </details>
         <details class="faq-item reveal">
           <summary>How long does it take?</summary>
-          <div class="faq-answer"><p>One visit. Most installs are done the same week you book.</p></div>
+          <div class="faq-answer"><p>One visit — most jobs are done the same week you book.</p></div>
         </details>
         <details class="faq-item reveal">
-          <summary>What do you do with the old mailbox?</summary>
+          <summary>What happens to the old mailbox?</summary>
           <div class="faq-answer"><p>We haul it away. You don&rsquo;t lift a thing.</p></div>
         </details>
         <details class="faq-item reveal">
           <summary>Can I pick my own colors?</summary>
-          <div class="faq-answer"><p>On Premium, yes — custom paint or stain in your colors, plus your choice of mailbox style and color.</p></div>
+          <div class="faq-answer"><p>On Premium, yes — custom paint or stain in your colors, plus your choice of mailbox style.</p></div>
         </details>
         <details class="faq-item reveal">
           <summary>How do I pay?</summary>
-          <div class="faq-answer"><p>We give you a firm price before we visit. Payment is simple — we&rsquo;ll walk you through it when you book.</p></div>
+          <div class="faq-answer"><p>You get a firm price before we visit. And you don&rsquo;t pay until it&rsquo;s standing straight.</p></div>
         </details>
       </div>
     </div>
   </section>
 
   <!-- EDIT: Quote form section -->
-  <section class="section" id="quote">
+  <section class="section section-compact" id="quote">
     <div class="wrap wrap-narrow">
       <div class="form-panel reveal">
         <!-- EDIT: Quote form headline -->
@@ -375,7 +346,7 @@
         <span class="rule" aria-hidden="true"></span>
         <h2>Get a firm price.</h2>
         <!-- EDIT: Quote form intro -->
-        <p class="form-intro">Tell us what&rsquo;s wrong with your mailbox. We&rsquo;ll reply fast with a fixed price — no surprises when we visit.</p>
+        <p class="form-intro">Tell us what&rsquo;s wrong with your mailbox. We&rsquo;ll reply fast with a fixed price — no surprises.</p>
         <form action="https://formsubmit.co/Nepostandpolish@gmail.com" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="New quote request — NE Post &amp; Polish">
           <input type="hidden" name="_template" value="table">
@@ -451,38 +422,6 @@
           <p class="form-reassure">Firm price before we visit. We reply fast — usually same day.</p>
         </form>
       </div>
-    </div>
-  </section>
-
-  <!-- EDIT: Contact / book section -->
-  <section class="section band-dark" id="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <!-- EDIT: Contact section kicker -->
-        <p class="kicker kicker-pale reveal">Book now</p>
-        <span class="rule reveal" aria-hidden="true"></span>
-        <!-- EDIT: Contact section headline -->
-        <h2 class="reveal">Ready? Let&rsquo;s do it.</h2>
-        <!-- EDIT: Contact section intro -->
-        <p class="lede lede-light reveal">Call, email, or send the form — however&rsquo;s easiest for you. We&rsquo;re around 24/7.</p>
-        <!-- EDIT: Contact booking steps -->
-        <ol class="book-steps reveal">
-          <li><strong><a href="tel:+14016966857">Call (401) 696-6857</a></strong> — fastest way. Real person, real answers.</li>
-          <li><strong><a href="#quote">Or send the quote form</a></strong> — two minutes, photo optional.</li>
-          <li><strong>We book your visit</strong> — same-week installs most of the time.</li>
-        </ol>
-        <!-- EDIT: Contact line -->
-        <p class="contact-line reveal"><a class="phone-big" href="tel:+14016966857">(401) 696-6857</a></p>
-        <p class="contact-sub reveal"><a href="mailto:Nepostandpolish@gmail.com">Nepostandpolish@gmail.com</a> · Open 24/7</p>
-      </div>
-      <aside class="contact-card reveal" aria-label="Contact details">
-        <h3>Reach us</h3>
-        <p><strong>Phone</strong><br><a href="tel:+14016966857">(401) 696-6857</a></p>
-        <p><strong>Email</strong><br><a href="mailto:Nepostandpolish@gmail.com">Nepostandpolish@gmail.com</a></p>
-        <p><strong>Hours</strong><br>Open 24/7</p>
-        <p class="region-line">Proudly serving northern RI, nearby MA &amp; northeastern CT.</p>
-        <a class="btn btn-gold btn-block" href="#quote">Get a Quote</a>
-      </aside>
     </div>
   </section>
 
