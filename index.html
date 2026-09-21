@@ -76,20 +76,20 @@
     <p class="kicker">What we do</p>
     <!-- EDIT: services headline -->
     <h2>One specialty. <em>Three ways we fix it.</em></h2>
-    <div class="cards">
-      <article class="card">
+    <div class="tiles">
+      <article class="tile">
         <!-- EDIT: service 1 -->
         <h3>Replace</h3>
         <p>Full removal and replacement of broken, rusted, outdated, or damaged mailboxes. Old unit hauled away, new one set plumb.</p>
         <p><strong>You need this if</strong> your post is leaning, rotted, or gone.</p>
       </article>
-      <article class="card">
+      <article class="tile">
         <!-- EDIT: service 2 -->
         <h3>Refresh</h3>
         <p>Restain and repaint that brings a weathered post back to life. Same post, brand-new first impression.</p>
         <p><strong>You need this if</strong> your post stands straight but looks tired.</p>
       </article>
-      <article class="card">
+      <article class="tile">
         <!-- EDIT: service 3 -->
         <h3>Recover</h3>
         <p>Storm or vehicle damage? Priority re-set, done right and USPS-compliant, so your mail never misses a day.</p>
@@ -105,7 +105,7 @@
     <p class="kicker">Pricing</p>
     <!-- EDIT: pricing headline -->
     <h2>Fixed prices. <em>No fluctuating quotes.</em></h2>
-    <div class="cards">
+    <div class="cards cards-2">
       <article class="card card-dark">
         <!-- EDIT: standard package -->
         <h3>Standard</h3>
@@ -146,20 +146,20 @@
     <h2>One post. <em>Every tenant's mail.</em></h2>
     <!-- EDIT: multi-unit intro -->
     <p class="lede">One sturdy post carrying 2&ndash;4 boxes. Code-compliant, plow-tough, and one call when anything needs fixing.</p>
-    <div class="cards">
-      <article class="card">
+    <div class="tiles">
+      <article class="tile">
         <!-- EDIT: duplex price -->
         <h3>Duplex</h3>
         <p class="price">$549</p>
         <p>2 boxes on one post. Full install, old unit hauled away.</p>
       </article>
-      <article class="card">
+      <article class="tile">
         <!-- EDIT: triplex price -->
         <h3>Triplex</h3>
         <p class="price">$749</p>
         <p>3 boxes on one post. Full install, old unit hauled away.</p>
       </article>
-      <article class="card">
+      <article class="tile">
         <!-- EDIT: quad price -->
         <h3>Quad</h3>
         <p class="price">$899</p>
@@ -177,18 +177,18 @@
     <p class="kicker">How it works</p>
     <!-- EDIT: how-it-works headline -->
     <h2>Easy as <em>one, two, three.</em></h2>
-    <div class="cards">
-      <article class="card">
+    <div class="tiles">
+      <article class="tile">
         <!-- EDIT: step 1 -->
         <h3>1. Reach out</h3>
         <p>Call, text, or email. Tell us what your post looks like now and what you're after.</p>
       </article>
-      <article class="card">
+      <article class="tile">
         <!-- EDIT: step 2 -->
         <h3>2. Pick your look</h3>
         <p>We confirm the style, finish, and details up front. Fixed price, no surprises.</p>
       </article>
-      <article class="card">
+      <article class="tile">
         <!-- EDIT: step 3 -->
         <h3>3. We handle the rest</h3>
         <p>Full install, old unit hauled away. Your Saturday stays yours.</p>
@@ -203,9 +203,8 @@
     <p class="kicker">Recent work</p>
     <!-- EDIT: gallery headline -->
     <h2>Built by hand. <em>Set to last.</em></h2>
-    <!-- EDIT: gallery — swap any photo by replacing the file in images/ (keep the name or update it here) -->
-    <!-- EDIT: gallery — swap any photo by replacing the file in images/ (keep the name or update it here) -->
-    <div class="gallery">
+    <!-- EDIT: gallery — swipe sideways on mobile; swap any photo by replacing the file in images/ (keep the name or update it here) -->
+    <div class="gallery-strip">
       <figure><img src="images/driveway.webp" alt="Finished mailbox install at the end of a driveway"></figure>
       <figure><img src="images/charredFrame.webp" alt="Charred-stain finish on a custom bracket"></figure>
       <figure><img src="images/carDisplay.webp" alt="Custom garage-themed post with diecast Mustang display"></figure>
@@ -236,28 +235,27 @@
     <p class="kicker">Questions</p>
     <!-- EDIT: faq headline -->
     <h2>Asked <em>often.</em></h2>
-    <!-- EDIT: faq — edit the questions and answers below -->
-    <div class="cards">
-      <article class="card">
-        <h3>Do I need to be home?</h3>
+    <!-- EDIT: faq — tap a question to expand; edit the questions and answers below -->
+    <div class="faq-list">
+      <details>
+        <summary>Do I need to be home?</summary>
         <p>No. We confirm the details by phone, do the work, and haul the old unit away.</p>
-      </article>
-      <article class="card">
-        <h3>How long does it take?</h3>
+      </details>
+      <details>
+        <summary>How long does it take?</summary>
         <p>Most installs are finished in a single visit.</p>
-      </article>
-      <article class="card">
-        <h3>Is it USPS-compliant?</h3>
+      </details>
+      <details>
+        <summary>Is it USPS-compliant?</summary>
         <p>Every install, every time.</p>
-      </article>
-      <article class="card">
-        <h3>What areas do you cover?</h3>
+      </details>
+      <details>
+        <summary>What areas do you cover?</summary>
         <p>Northern Rhode Island, nearby Massachusetts, and northeastern Connecticut. Full town list in the footer.</p>
-      </article>
+      </details>
     </div>
   </div>
 </section>
-
 
 <!-- ================= QUOTE ================= -->
 <section class="section" id="quote">
@@ -383,6 +381,12 @@
     <p>&copy; 2026 NE Post &amp; Polish &nbsp;&middot;&nbsp; (401) 696-6857 &nbsp;&middot;&nbsp; Nepostandpolish@gmail.com</p>
   </div>
 </footer>
+
+<!-- ================= STICKY MOBILE CALL BAR ================= -->
+<div class="sticky-cta">
+  <a class="call" href="tel:+14016966857">Call now</a>
+  <a class="quote-link" href="#quote">Get a quote</a>
+</div>
 
 </body>
 </html>
