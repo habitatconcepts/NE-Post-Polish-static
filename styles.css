@@ -379,3 +379,48 @@ h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
   }
   .main-nav a:first-child { border-top: none; }
 }
+
+/* ---------- Post & Polish duo ---------- */
+.duo-aside {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(194,161,95,0.08);
+  border-radius: 0 8px 8px 0;
+}
+.duo-aside p { margin: 0.5rem 0; font-style: italic; }
+.duo-aside p:first-child { margin-top: 0; }
+.duo-aside p:last-child { margin-bottom: 0; }
+.duo-aside .who { font-style: normal; font-weight: 700; }
+.duo-aside .who.post { color: var(--gold-deep); }
+.duo-aside .who.polish { color: #7c8db5; }
+.section-dark .duo-aside { background: rgba(194,161,95,0.10); }
+.section-dark .duo-aside p { color: #e9e4d6; }
+.section-dark .duo-aside .who.post { color: var(--gold); }
+.duo-nudge { margin-top: 1.5rem; font-size: 1.05rem; }
+.duo-nudge a { color: var(--gold-deep); font-weight: 700; }
+.section-dark .duo-nudge a { color: var(--gold); }
+
+/* floating ask button — always one tap from the voiced Q&A */
+.ask-fab {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 70;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.30);
+}
+.ask-fab:hover { background: var(--gold-deep); }
+@media (max-width: 759px) {
+  .ask-fab { bottom: 4.6rem; right: 1rem; } /* clears the sticky call bar */
+}
