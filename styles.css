@@ -395,6 +395,7 @@ h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
 .duo-aside .who.post { color: var(--gold-deep); }
 .duo-aside .who.polish { color: #7c8db5; }
 .section-dark .duo-aside { background: rgba(194,161,95,0.10); }
+.section-dark .duo-aside p { color: #e9e4d6; }
 .section-dark .duo-aside .who.post { color: var(--gold); }
 .duo-nudge { margin-top: 1.5rem; font-size: 1.05rem; }
 .duo-nudge a { color: var(--gold-deep); font-weight: 700; }
