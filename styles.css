@@ -244,6 +244,7 @@ h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
 .tile p { font-size: 0.85rem; color: var(--muted); line-height: 1.45; margin-bottom: 0.5rem; }
 .tile p:last-child { margin-bottom: 0; }
 .tile .price { font-size: 1.6rem; margin-bottom: 0.3rem; }
+.swipe-hint { display: none; }
 
 /* ---------- pricing: two compact columns even on phones ---------- */
 .cards-2 { grid-template-columns: repeat(2, 1fr); }
@@ -319,6 +320,27 @@ h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
   h2 { margin-bottom: 1.25rem; }
   .lede { margin: 1rem 0 1.5rem; }
   .hero-cta { margin-bottom: 1.25rem; }
+  /* services tiles: swipe row on phones — one short card high, not three tall columns */
+  #services .tiles {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+  }
+  #services .tiles::-webkit-scrollbar { display: none; }
+  #services .tile { flex: 0 0 78%; scroll-snap-align: start; }
+  .swipe-hint {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin: -0.75rem 0 1rem;
+  }
   .cards-2 { gap: 0.75rem; }
   .cards-2 .card { padding: 1.1rem 0.8rem; }
   .cards-2 .card h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
