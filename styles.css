@@ -419,6 +419,14 @@ h1 em, h2 em, .tagline em { color: var(--gold); font-style: italic; }
 .section-dark .duo-aside { background: rgba(194,161,95,0.10); }
 .section-dark .duo-aside p { color: #e9e4d6; }
 .section-dark .duo-aside .who.post { color: var(--gold); }
+.shop-sign {
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.shop-sign p { font-size: 1.3rem; font-style: italic; margin: 0; }
+.shop-sign .sig { font-style: normal; font-weight: 700; margin-top: .6rem; font-size: 1rem; }
 .duo-nudge { margin-top: 1.5rem; font-size: 1.05rem; }
 .duo-nudge a { color: var(--gold-deep); font-weight: 700; }
 .section-dark .duo-nudge a { color: var(--gold); }
